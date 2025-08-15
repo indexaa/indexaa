@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <!-- Google Fonts: Inter -->
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>IndexAA - Artem Agafonov</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <img src="assets/logo-aa.svg" alt="IndexAA Logo" class="logo" />
+    <p>Принципиально новый подход к качественному маркетингу</p>
+  </header>
+
+ <section class="profile">
+  <img src="assets/profile.jpg" alt="Artem Agafonov" class="profile-photo" />
+  <div class="profile-body">
+    <h2>Меня зовут Артём Агафонов</h2>
+    <p class="lead">
+      Я создатель проекта IndexAA, маркетолог и бизнес-аналитик.
+      Предлагаю комплексные услуги маркетинга для аплифта метрик вашего бизнеса.
+    </p>
+
+    <h3 class="profile-subtitle">Услуги</h3>
+    <ul class="profile-list">
+      <li>Аудит маркетинговой воронки</li>
+      <li>Настройка CRM</li>
+      <li>Запуск рекламных кампаний</li>
+    </ul>
+  </div>
+</section>
+
+
+
+  <section class="contacts">
+    <h2>Контакты</h2>
+    <ul>
+      <li>Telegram: <a href="https://t.me/artemagafon_98" target="_blank" rel="noopener">@artemagafon_98</a></li>
+      <li>Паблик TG: <a href="https://t.me/indexagafonov" target="_blank" rel="noopener">t.me/indexagafonov</a></li>
+      <li>Instagram: <a href="https://instagram.com/artem_mcnk" target="_blank" rel="noopener">@artem_mcnk</a></li>
+      <li>Email: <a href="mailto:artem-agafon@rambler.ru">artem-agafon@rambler.ru</a></li>
+    </ul>
+  </section>
+
+  <!-- Форма заявки -->
+  <section id="contact-form" class="section section-gray">
+    <div class="container">
+      <h2 class="section-title">Оставить заявку</h2>
+
+      <form id="leadForm" class="lead-form" novalidate>
+        <div class="form-row">
+          <label for="name">Имя <span aria-hidden="true">*</span></label>
+          <input id="name" name="name" type="text" required placeholder="Ваше имя" />
+        </div>
+
+        <div class="form-row">
+          <label for="email">Email <span aria-hidden="true">*</span></label>
+          <input id="email" name="email" type="email" required placeholder="you@example.com" />
+        </div>
+
+        <div class="form-row">
+          <label for="phone">Телефон</label>
+          <input id="phone" name="phone" type="tel" placeholder="+7 900 000-00-00" />
+        </div>
+
+        <div class="form-row">
+          <label for="message">Сообщение <span aria-hidden="true">*</span></label>
+          <textarea id="message" name="message" rows="5" required placeholder="Коротко опишите задачу или цель"></textarea>
+        </div>
+
+        <input type="hidden" name="source" value="IndexAA landing" />
+
+        <div class="form-actions">
+          <button id="formSubmit" type="submit" class="btn">Отправить заявку</button>
+          <div id="formStatus" class="form-status" role="status" aria-live="polite"></div>
+        </div>
+      </form>
+
+      <p class="hint">Мы не передаём данные третьим лицам. Ответим в течение рабочего дня.</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 IndexAA. Все права защищены.</p>
+  </footer>
+
+  <!-- EmailJS SDK (обязательно перед script.js) -->
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+  <!-- Ваш JS -->
+  <script src="script.js"></script>
+</body>
+</html>
