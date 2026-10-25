@@ -4,7 +4,7 @@ window.SITE_CONFIG = {
   // Адрес Cloudflare Worker (см. worker/README.md).
   // Когда задан: заявки приходят в Telegram, а на сайте показываются свежие посты канала.
   // Пример: 'https://indexaa.your-name.workers.dev'
-  WORKER_URL: '',
+  WORKER_URL: 'https://indexaa.indexaa.workers.dev',
 
   // Ссылка на запись в календаре (Cal.com или любой другой).
   // Пусто — кнопка «Записаться» ведёт в Telegram.
